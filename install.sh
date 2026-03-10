@@ -126,7 +126,18 @@ install_gpu_drivers() {
     [[ "$GPU_TYPE" == "none" ]] && { warn "Skipping GPU driver installation."; return; }
 
     local driver_file="$PACKAGES_DIR/drivers/${GPU_TYPE}.txt"
-    install_pacman_packages "GPU (${GPU_TYPE})" "$driver_file"
+
+    [[ -f "$driver_file" ]] || { warn "Driver file not found: $driver_file"; return; }
+
+    local packages
+    mapfile -t packages < <(read_packages "$driver_file")
+
+    [[ ${#packages[@]} -eq 0 ]] && { warn "No GPU packages found, skipping."; return; }
+
+    log "Installing GPU (${GPU_TYPE}) packages (${#packages[@]})..."
+    sudo pacman -S --needed --noconfirm "${packages[@]}" || \
+        warn "Some GPU packages could not be installed (may not be available in this environment)."
+    success "GPU driver step complete."
 }
 
 enable_services() {
