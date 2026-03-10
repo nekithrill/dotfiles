@@ -60,7 +60,6 @@ if command -v yay &>/dev/null; then
 else
     log "Installing yay..."
     sudo pacman -S --needed --noconfirm base-devel
-    local tmp_dir
     tmp_dir=$(mktemp -d)
     git clone https://aur.archlinux.org/yay.git "$tmp_dir/yay"
     (cd "$tmp_dir/yay" && makepkg -si --noconfirm)
