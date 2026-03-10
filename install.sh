@@ -8,7 +8,7 @@ set -euo pipefail
 # Requires: pacman (Arch Linux), an AUR helper (yay or paru)
 # ==============================================================================
 
-PACKAGES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PACKAGES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/packages"
 
 # Colors
 RED='\033[0;31m'
