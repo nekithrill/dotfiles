@@ -1,0 +1,11 @@
+git
+github-cli
+nodejs
+npm
+docker
+docker-compose-plugin
+pnpm
+python
+python-pip
+neovim
+code

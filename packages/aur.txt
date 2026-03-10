@@ -1,0 +1,10 @@
+brave-bin
+notion-app-enhanced
+adw-gtk-theme-git
+darkly-bin
+bibata-cursor-theme-bin
+whitesur-icon-theme-git
+ttf-rubik-vf
+ttf-readex-pro
+ttf-material-symbols-variable-git
+otf-space-grotesk

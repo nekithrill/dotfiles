@@ -1,0 +1,14 @@
+btop
+bat
+fzf
+ripgrep
+fd
+jq
+bc
+curl
+wget
+imagemagick
+slurp
+grim
+tesseract
+tesseract-data-eng

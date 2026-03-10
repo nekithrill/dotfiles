@@ -1,0 +1,5 @@
+# Services to enable via systemctl
+NetworkManager
+bluetooth
+tlp
+docker
