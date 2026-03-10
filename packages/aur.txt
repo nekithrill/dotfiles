@@ -8,3 +8,4 @@ ttf-rubik-vf
 ttf-readex-pro
 ttf-material-symbols-variable-git
 otf-space-grotesk
+wlogout
