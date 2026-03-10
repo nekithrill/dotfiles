@@ -1,5 +1,6 @@
 brave-bin
 notion-app-enhanced
+docker-compose-plugin
 adw-gtk-theme-git
 darkly-bin
 bibata-cursor-theme-bin
