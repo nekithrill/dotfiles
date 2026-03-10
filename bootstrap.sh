@@ -81,7 +81,17 @@ fi
 success "Dotfiles ready at $DOTFILES_DIR."
 
 # ------------------------------------------------------------------------------
-# Step 5: Run install.sh
+# Step 5: Enable multilib repository
+# ------------------------------------------------------------------------------
+
+log "Enabling multilib repository..."
+sudo sed -i '/^#\[multilib\]/s/^#//' /etc/pacman.conf
+sudo sed -i '/^\[multilib\]/{n;s/^#//}' /etc/pacman.conf
+sudo pacman -Sy --noconfirm
+success "multilib enabled."
+
+# ------------------------------------------------------------------------------
+# Step 6: Run install.sh
 # ------------------------------------------------------------------------------
 
 INSTALL_SCRIPT="$DOTFILES_DIR/install.sh"
