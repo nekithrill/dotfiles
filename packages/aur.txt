@@ -1,3 +1,4 @@
+spotify
 brave-bin
 notion-app-enhanced
 docker-compose-plugin

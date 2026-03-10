@@ -4,7 +4,6 @@ discord
 telegram-desktop
 gimp
 inkscape
-spotify
 dolphin
 mpv
 pavucontrol-qt
