@@ -5,7 +5,7 @@ polkit-kde-agent
 pipewire
 wireplumber
 pipewire-pulse
-NetworkManager
+networkmanager
 wl-clipboard
 gnome-keyring
 blueman
