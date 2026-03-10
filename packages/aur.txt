@@ -11,3 +11,4 @@ ttf-readex-pro
 ttf-material-symbols-variable-git
 otf-space-grotesk
 wlogout
+breeze-plus

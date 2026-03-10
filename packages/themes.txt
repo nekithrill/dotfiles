@@ -1,3 +1,2 @@
 breeze
-breeze-plus
 kvantum
