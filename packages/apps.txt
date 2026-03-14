@@ -1,17 +1,25 @@
+# Browser
 firefox
-steam
+
+# Communication
 discord
 telegram-desktop
+
+# Game service
+steam
+
+# Media
+mpv
 gimp
 inkscape
+
+# Files & archives
 dolphin
-mpv
-pavucontrol-qt
-qbittorrent
 ark
-p7zip
-unrar
 okular
-swappy
-hyprshot
-wf-recorder
+
+# Sound
+pavucontrol-qt
+
+# Torrent
+qbittorrent

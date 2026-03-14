@@ -1,10 +1,18 @@
-git
-github-cli
-nodejs
-npm
-docker
-pnpm
-python
-python-pip
+# Editor
 neovim
 code
+
+# VCS
+github-cli
+
+# JavaScript
+nodejs
+npm
+pnpm
+
+# Python
+python
+python-pip
+
+# Containers
+docker

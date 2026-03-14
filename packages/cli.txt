@@ -1,14 +1,27 @@
-btop
-bat
-fzf
-ripgrep
-fd
-jq
-bc
+# Сеть и скачивание
+git
 curl
 wget
+
+# Archives
+p7zip
+unrar
+
+# Monitoring
+btop
+
+# Modern replacement of default utils
+bat
+eza
+fd
+ripgrep
+
+# Search & filtration
+fzf
+jq
+bc
+
+# Media & images
 imagemagick
-slurp
-grim
 tesseract
 tesseract-data-eng
