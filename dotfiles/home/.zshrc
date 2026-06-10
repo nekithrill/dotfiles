@@ -8,9 +8,7 @@ ZSH_THEME="robbyrussell"
 # Pressing ESC twice automatically prepends 'sudo' to the current command
 plugins=(
     git 
-    sudo 
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+    sudo
 )
 
 source "$ZSH/oh-my-zsh.sh"
