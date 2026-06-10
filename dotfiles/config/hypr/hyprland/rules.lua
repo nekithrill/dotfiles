@@ -1,20 +1,36 @@
 hl.dwindle({
-    pseudotile = true,
-    preserve_split = true,
+	pseudotile = true,
+	preserve_split = true,
+	smart_split = false,
+	smart_resizing = false,
 })
 
--- 1. Заставляем системные утилиты открываться в ПЛАВАЮЩЕМ режиме
-hl.windowrulev2("float", "class:^(nm-connection-editor)$")
-hl.windowrulev2("float", "class:^(blueman-manager)$")
-hl.windowrulev2("float", "class:^(org.pulseaudio.pavucontrol)$")
+local suppressMaximizeRule = hl.window_rule({
+	name = "suppress-maximize-events",
+	match = { class = ".*" },
+	suppress_event = "maximize",
+})
+-- suppressMaximizeRule:set_enabled(false)
 
--- 2. Задаем фиксированный размер для этих плавающих окон
-hl.windowrulev2("size 600 400", "class:^(org.pulseaudio.pavucontrol)$")
-hl.windowrulev2("size 700 500", "class:^(blueman-manager)$")
+-- Floating system utils
+hl.window_rule({
+	name = "float-nm",
+	match = { class = "^nm-connection-editor$" },
+	float = true,
+})
 
--- 3. Центрируем их при открытии
-hl.windowrulev2("center", "class:^(org.pulseaudio.pavucontrol)$")
-hl.windowrulev2("center", "class:^(blueman-manager)$")
+hl.window_rule({
+	name = "float-blueman",
+	match = { class = "^blueman-manager$" },
+	float = true,
+	size = "700 500",
+	center = true,
+})
 
--- 4. Правило для предотвращения зависания экрана при полноэкранных играх
-hl.windowrulev2("suppressmaximize", "class:.*")
+hl.window_rule({
+	name = "float-pavucontrol",
+	match = { class = "^org.pulseaudio.pavucontrol$" },
+	float = true,
+	size = "600 400",
+	center = true,
+})
