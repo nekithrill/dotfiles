@@ -1,0 +1,47 @@
+# packages/extras.txt - Additional packages
+# Syntax: package-name (pacman) | AUR:package-name (yay) | # comment (ignored)
+
+# Graphical Shell & Launchers
+AUR:quickshell-git
+fuzzel
+AUR:wlogout
+
+# Qt & GTK Core Dependencies
+qt6-svg
+qt6-5compat
+gsettings-desktop-schemas
+
+# Wayland & Session Utilities
+xorg-xwayland
+wl-clipboard
+cliphist
+playerctl
+pavucontrol
+uwsm
+
+# Base Screenshot Tools
+grim
+slurp
+
+# Network & Bluetooth Applets
+network-manager-applet
+blueman
+
+# File Management & Terminal
+thunar
+yazi
+kitty
+
+# Themes, Icons & Cursors
+papirus-icon-theme
+adwaita-cursors
+nwg-look
+AUR:matugen-bin
+
+# Qt Theme Configuration Engines
+qt5ct
+qt6ct
+kvantum
+
+# System Location
+geoclue
