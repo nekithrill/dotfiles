@@ -3,15 +3,14 @@ local base = home .. "/.config/hypr/hyprland/"
 
 -- load helper
 local function load(path)
-    local ok, err = pcall(dofile, path)
-    if not ok then
-        print("[Hypr config error]: " .. path .. "\n" .. err)
-    end
+	local ok, err = pcall(dofile, path)
+	if not ok then
+		print("[Hypr config error]: " .. path .. "\n" .. err)
+	end
 end
 
 -- 0. ENVIRONMENT
 load(base .. "env.lua")
--- load(base .. "env-nvidia.lua")
 
 -- 1. CORE DATA (must be first)
 load(base .. "variables.lua")
